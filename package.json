@@ -2,9 +2,13 @@
   "name": "vanilla-template",
   "version": "1.0.0",
   "description": "basic template for projects",
-  "main": "src/index.js",
+  "main": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build --out-dir dist --public-url ./ ./src/index.html",
+    "start": "parcel serve ./src/index.html --open",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
   },
   "repository": {
     "type": "git",
@@ -24,5 +28,11 @@
   "bugs": {
     "url": "https://github.com/misha-lysak/vanilla-template/issues"
   },
-  "homepage": "https://github.com/misha-lysak/vanilla-template#readme"
+  "homepage": "https://github.com/misha-lysak/vanilla-template#readme",
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "parcel-bundler": "^1.12.5"
+  }
 }
