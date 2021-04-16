@@ -1,0 +1,28 @@
+{
+  "name": "vanilla-template",
+  "version": "1.0.0",
+  "description": "basic template for projects",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misha-lysak/vanilla-template.git"
+  },
+  "keywords": [
+    "template",
+    "voilerplate",
+    "html",
+    "scss",
+    "javascript",
+    "parcel",
+    "eslint"
+  ],
+  "author": "misha-lysak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/misha-lysak/vanilla-template/issues"
+  },
+  "homepage": "https://github.com/misha-lysak/vanilla-template#readme"
+}
