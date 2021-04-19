@@ -4,9 +4,10 @@
   "description": "basic template for projects",
   "main": "src/index.html",
   "scripts": {
-    "build": "parcel build --out-dir dist --public-url ./ ./src/index.html",
-    "start": "parcel serve ./src/index.html --open",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build --out-dir docs --public-url ./ ./src/index.html",
+    "prebuild": "rm -rf ./docs",
+    "start": "parcel serve ./src/index.html --open",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix"
   },
